@@ -1,1 +1,55 @@
 alkdsjflkajdflkja dsf :D
+
+###################
+
+C:\gitFiles4\applecake>dir/w
+ Volume in drive C has no label.
+ Volume Serial Number is 12CE-8D08
+
+ Directory of C:\gitFiles4\applecake
+
+[.]  [..]
+               0 File(s)              0 bytes
+               2 Dir(s)  11,221,274,624 bytes free
+
+C:\gitFiles4\applecake>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        blah.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\gitFiles4\applecake>git add --all
+
+C:\gitFiles4\applecake>git commit -m "This is the first commit"
+[master (root-commit) b7a8e98] This is the first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 blah.txt.txt
+
+C:\gitFiles4\applecake>git remote add origin https://github.com/iggykev/applemuffin.git
+
+C:\gitFiles4\applecake>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\gitFiles4\applecake>git push -u origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/iggykev/applemuffin.git/'
+
+C:\gitFiles4\applecake>git config --global user.name "Kevin Do"
+
+C:\gitFiles4\applecake>git config --global user.name "iggykev@gmail.com"
+
+C:\gitFiles4\applecake>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 241 bytes | 120.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/iggykev/applemuffin.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
